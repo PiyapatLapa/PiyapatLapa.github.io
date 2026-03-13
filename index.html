@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>แนะนำเกมกากๆ</title>
+    <title>My Simple Website</title>
 
     <style>
         body{
@@ -46,7 +46,17 @@
 
     <h1>เกมกากๆ Overwatch</h1>
 
-   <img src="https://cdn.europosters.eu/image/hp/77526.jpg" alt="เกม Overwatch">
+    <img src="1441.jpg" alt="เกมโง่ๆOverwatch">
+
+    <button onclick="showMessage()">Click Me</button>
+
+<h3>ทักทายผู้ใช้</h3>
+
+<input type="text" id="username" placeholder="กรอกชื่อของคุณ">
+
+<button onclick="sayHello()">ทักทาย</button>
+
+<p id="result"></p>
 
     <p>
         เว็บไซต์นี้แนะนำเกมกากๆเล่นแล้วเป็นบ้า
@@ -68,12 +78,16 @@
     <button onclick="showMessage()">Click Me</button>
 
     <script>
-        function showMessage(){
-            alert("Welcome to my website!");
-        }
-    </script>
+    function showMessage(){
+        alert("ยินดีต้อนรับสู่เว็บไซต์ของฉัน");
+    }
+
+    function sayHello(){
+        let name = document.getElementById("username").value;
+        document.getElementById("result").innerHTML =
+        "สวัสดี " + name + " ยินดีต้อนรับ";
+    }
+</script>
 
 </body>
-
 </html>
-
